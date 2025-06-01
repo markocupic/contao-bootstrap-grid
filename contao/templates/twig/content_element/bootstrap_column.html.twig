@@ -1,0 +1,13 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+
+{% block content %}
+    {% set inner_attributes = attrs()
+        .addClass('bootsrap-column--inner')
+        .addClass(inner_classes|default)
+    %}
+    <div{% block inner_attributes %}{{ inner_attributes }}{% endblock %}>
+        {% for fragment in nested_fragments %}
+            {{ content_element(fragment) }}
+        {% endfor %}
+    </div>
+{% endblock %}
