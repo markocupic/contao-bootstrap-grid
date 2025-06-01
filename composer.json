@@ -3,7 +3,7 @@
     "description": "This bundle helps building bootstrap grids in a Contao CMS environment",
     "keywords": [
         "contao",
-        "bootstrap grid",
+        "bootstrap grid"
     ],
     "type": "contao-bundle",
     "license": "GPL-3.0-or-later",
